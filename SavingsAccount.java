@@ -30,7 +30,7 @@ public class SavingsAccount
         {
             balance -= amount;
             return amount;
-        }else
+        }else 
         {
             amount = 0;
         }
