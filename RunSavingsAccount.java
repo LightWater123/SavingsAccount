@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LabExer3 {
+public class RunSavingsAccount {
 
     
     
