@@ -18,7 +18,7 @@ public class LabExer3 {
 
         System.out.println("Press D for another deposit or W to withdraw: ");
         char decision = s.next().charAt(0);
-        if (decision == 'd' || decision == 'D')
+        if (decision == 'd' || decision == 'D') 
         {
             System.out.println("Enter deposit amount: ");
             savings.deposit(s.nextDouble());
