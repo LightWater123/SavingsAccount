@@ -16,18 +16,20 @@ public class SavingsAccount
     {
         return interestRate;
     }
-    public double getBalance(){
+    public double getBalance()
+    {
         return balance;
     }
     public void deposit(double amount)
     {
-        amount += balance;
+        balance += amount;
     }
     public double withdraw(double amount)
     {
         if(balance >= amount )
         {
-            amount -= balance;
+            balance -= amount;
+            return amount;
         }else
         {
             amount = 0;
@@ -36,7 +38,7 @@ public class SavingsAccount
     }
     public void addInterest(double interest)
     {
-        balance *= interestRate;
+        interest = balance *= interestRate;
         balance += interest;
     }
     public static void showBalance(SavingsAccount account)
